@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Heart's Letter</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      color: #3d2b1f;
+      margin: 0;
+      padding: 0;
+    }
+
+    .letter-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff8ec;
+      border: 3px double #a67c52;
+      padding: 40px 60px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    }
+
+    h1 {
+      font-family: 'Lucida Calligraphy', cursive;
+      text-align: center;
+      color: #8b0000;
+      font-size: 2.7em;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.3em;
+      color: #5b3c2d;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8em;
+      margin-bottom: 25px;
+      text-align: justify;
+    }
+
+    .signature {
+      text-align: right;
+      font-family: 'Lucida Handwriting', cursive;
+      font-size: 1.7em;
+      color: #4b2e2e;
+      margin-top: 60px;
+    }
+
+    .date {
+      text-align: right;
+      font-size: 1em;
+      font-style: italic;
+      margin-bottom: 25px;
+      color: #6d4c41;
+    }
+
+    .ornament {
+      text-align: center;
+      font-size: 2.5em;
+      color: #b22222;
+      margin: 30px 0;
+    }
+
+    .heart-line {
+      text-align: center;
+      font-size: 1.5em;
+      color: #a0522d;
+      margin-top: 40px;
+      border-top: 1px dashed #a67c52;
+      padding-top: 20px;
+    }
+
+    .response-buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 12px 24px;
+      margin: 0 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .yes-btn {
+      background-color: #b22222;
+      color: #fff5ee;
+    }
+
+    .yes-btn:hover {
+      background-color: #a31c1c;
+    }
+
+    .no-btn {
+      background-color: #d3c0a8;
+      color: #3d2b1f;
+    }
+
+    .no-btn:hover {
+      background-color: #c2b090;
+    }
+
+    .reply-message {
+      text-align: center;
+      font-size: 1.3em;
+      font-style: italic;
+      color: #8b0000;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="letter-container">
+    <h1>To The Keeper of My Heart</h1>
+    <h2>A Declaration from My Soul</h2>
+
+    <div class="date">May 20th, 2025</div>
+
+    <p>
+      My Beloved,
+    </p>
+
+    <p>
+      In a world of fleeting moments, your presence has become my eternity. Every glance you offer,
+      every word you whisper, each smile you grace the world with—has become the rhythm to which
+      my heart dances.
+    </p>
+
+    <p>
+      Since our stars aligned, I have lived in a dream painted in the richest hues of love. You are the
+      sunrise I long for, the quiet comfort in my storms, and the reason my tomorrows carry meaning.
+    </p>
+
+    <div class="ornament">💫💍💫</div>
+
+    <p>
+      In the language of timeless lovers and beneath the vow of the stars, I kneel before your heart
+      with one question:
+    </p>
+
+    <div class="heart-line">Will you honor me with your “Yes”? Will you marry me?</div>
+
+    <div class="response-buttons">
+      <button class="yes-btn" onclick="reply('yes')">Yes, with all my heart 💖</button>
+      <button class="no-btn" onclick="reply('no')">No (but I still love you!) 😅</button>
+    </div>
+
+    <div id="response" class="reply-message"></div>
+
+    <div class="signature">
+      Eternally Yours,<br>
+      [SHUBHO]
+    </div>
+  </div>
+
+  <script>
+    function reply(answer) {
+      const response = document.getElementById('response');
+      if (answer === 'yes') {
+        response.innerHTML = "💞 You have made me the happiest soul alive! Our forever begins now.";
+      } else {
+        response.innerHTML = "😢 Alas! Even in rejection, your honesty is a gift I’ll always cherish.";
+      }
+    }
+  </script>
+</body>
+</html>
+
